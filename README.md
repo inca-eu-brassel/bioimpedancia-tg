@@ -26,8 +26,9 @@ Realizar a integração completa entre o hardware de leitura de bioimpedância e
 - [ ] Acoplamento Neurovascular e Modulação do Fluxo Sanguíneo pelo SNC.
 
 ### 💻 Cursos e Práticas (Udemy / Complementares)
-- [ ] Curso "Embedded Systems Bare-Metal Programming Ground Up (STM32)".
-- [ ] Estudos de Comunicação Serial Avançada (STM32 <-> Processing). 
+
+* 💻 [Anotações do Curso da Udemy: "Embedded Systems Bare-Metal Programming Ground Up (STM32)"](./estudos/udemy-processamento.md)
+* 🧠 [Leituras em Bioeletricidade e Neurociência](./estudos/bioeletricidade.md)
 
 ---
 
