@@ -27,7 +27,7 @@ Realizar a integração completa entre o hardware de leitura de bioimpedância e
 
 ### 💻 Cursos e Práticas (Udemy / Complementares)
 
-* 💻 [Anotações do Curso da Udemy: "Embedded Systems Bare-Metal Programming Ground Up (STM32)"](./estudos/udemy-processamento.md)
+* 💻 [Anotações do Curso da Udemy: "Embedded Systems Bare-Metal Programming Ground Up (STM32)"](https://inca-eu-brassel.github.io/bioimpedancia-tg/estudos/udemy-processamento)
 * 🧠 [Leituras em Bioeletricidade e Neurociência](./estudos/bioeletricidade.md)
 
 ---
