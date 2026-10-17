@@ -19,7 +19,15 @@ Realizar a integração completa entre o hardware de leitura de bioimpedância e
 *(Esta seção reúne todo o embasamento teórico, análises e materiais de estudo)*
 - **Firmware (STM32):** Estudos de arquitetura, configuração de portas seriais (UART), amostragem e conversão A/D.
 - **Software (Processing):** Manipulação de dados na porta COM, tratamento de pacotes e plotagem em tempo real (`beginShape`, `vertex`).
-- **Fundamentação Teórica:** Princípios de bioimpedância elétrica e instrumentação biomédica.
+
+### 📖 Leituras e Fundamentação Teórica
+- [ ] Bioeletricidade Aplicada e Propriedades de Tecidos Biológicos.
+- [ ] Processamento de Sinais Bioelétricos (Aplicações Cardíacas e Neurológicas).
+- [ ] Acoplamento Neurovascular e Modulação do Fluxo Sanguíneo pelo SNC.
+
+### 💻 Cursos e Práticas (Udemy / Complementares)
+- [ ] Curso "Embedded Systems Bare-Metal Programming Ground Up (STM32)".
+- [ ] Estudos de Comunicação Serial Avançada (STM32 <-> Processing). 
 
 ---
 
