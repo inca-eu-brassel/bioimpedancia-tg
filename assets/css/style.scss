@@ -1,0 +1,52 @@
+---
+---
+
+@import "jekyll-theme-architect";
+
+/* Garante que o cabeçalho permita posicionamento dos elementos */
+header {
+  position: relative;
+}
+
+/* Posiciona a logo no canto direito do banner */
+header::after {
+  content: "";
+  display: block;
+  width: 140px;
+  height: 140px;
+  background-image: url('/bioimpedancia-tg/logo.png'); /* Nota: em repositórios de projeto, pode incluir o nome do repo se necessário, ou /logo.png */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 90px;
+  right: 180px;
+}
+
+@media screen and (max-width: 768px) {
+  header::after {
+    position: static;
+    margin: 20px auto 0 auto;
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Cores personalizadas do tema */
+#header_wrap, header {
+  background: #2d4753 !important;
+  background-color: #2d4753 !important;
+}
+
+body {
+  background-color: #efece8 !important;
+  color: #2d4753 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #9da4da !important;
+}
+
+a {
+  color: #e45830 !important;
+}
