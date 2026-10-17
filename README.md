@@ -14,7 +14,14 @@ Realizar a integração completa entre o hardware de leitura de bioimpedância e
 * **Emerson Graciano:** Interface gráfica em Processing (Graduação).
 
 ---
+## Como usar o conteúdo desta página:
+1. Decidi começar com o curso da Udemy em alternância com a fundamentação teórica. Vou deixar um cronograma do que está sendo feito e no final vou modificá-lo para o que achar o fluxo mais "coerente".
 
+| Coluna 1: Tópico | Coluna 2: Descrição |
+| :--- | :--- |
+| 16/10/2026| Fundamentos de GitHub para registro de atividades feitas |
+| 17/10/2026 | Planejamento para realização do curso da Udemy (mais detalhes em "Cursos e Práticas (Udemy / Complementares)" + fundamentação teórica |
+   
 ## 📚 Conteúdos e Estudo
 *(Esta seção reúne todo o embasamento teórico, análises e materiais de estudo)*
 - **Firmware (STM32):** Estudos de arquitetura, configuração de portas seriais (UART), amostragem e conversão A/D.
