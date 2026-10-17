@@ -8,21 +8,22 @@ header {
   position: relative;
 }
 
-/* Posiciona a logo no canto direito do banner */
+/* Puxa a logo mais para a esquerda, centralizando-a abaixo do botão do GitHub */
 header::after {
   content: "";
   display: block;
-  width: 140px;
-  height: 140px;
-  background-image: url('/bioimpedancia-tg/logo.png'); /* Nota: em repositórios de projeto, pode incluir o nome do repo se necessário, ou /logo.png */
+  width: 250px;                  /* Tamanho da logo */
+  height: 250px;                 /* Tamanho da logo */
+  background-image: url('/logo.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  top: 90px;
-  right: 180px;
+  top: 20px;                     /* Distância a partir do topo */
+  right: 430px;                  /* Aumentado para puxar o logo mais para a esquerda! */
 }
 
+/* Em telas de celular/tablets, centraliza a logo */
 @media screen and (max-width: 768px) {
   header::after {
     position: static;
@@ -32,21 +33,24 @@ header::after {
   }
 }
 
-/* Cores personalizadas do tema */
+/* Cor do banner / cabeçalho do tema Architect */
 #header_wrap, header {
   background: #2d4753 !important;
   background-color: #2d4753 !important;
 }
 
+/* Cor de fundo e texto principal da página */
 body {
   background-color: #efece8 !important;
   color: #2d4753 !important;
 }
 
+/* Cor dos títulos */
 h1, h2, h3, h4, h5, h6 {
   color: #9da4da !important;
 }
 
+/* Cor dos links */
 a {
   color: #e45830 !important;
 }
