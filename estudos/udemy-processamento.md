@@ -1,3 +1,8 @@
+---
+layout: default
+title: Anotações do Curso Udemy
+---
+
 # 💻 Anotações do Curso: Processamento de Sinais Bioelétricos (Udemy)
 
 Documentação de estudos, códigos e conceitos aplicados ao projeto de integração de bioimpedância elétrica.
