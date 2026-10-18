@@ -21,7 +21,8 @@ Realizar a integração completa entre o hardware de leitura de bioimpedância e
 | :--- | :--- |
 | 16/10/2026| Fundamentos de GitHub para registro de atividades feitas |
 | 17/10/2026 | Planejamento para realização do curso da Udemy (mais detalhes em "Cursos e Práticas (Udemy / Complementares)" + fundamentação teórica |
-   
+| 18/10/2026 | Curso Udemy "Seção 1 - Getting Started - Constructing Peripheral Registers from Memory Address" - "1 Downloading our Integrated Development Environment (IDE)" |
+
 ## 📚 Conteúdos e Estudo
 *(Esta seção reúne todo o embasamento teórico, análises e materiais de estudo)*
 - **Firmware (STM32):** Estudos de arquitetura, configuração de portas seriais (UART), amostragem e conversão A/D.
