@@ -22,6 +22,7 @@ Realizar a integração completa entre o hardware de leitura de bioimpedância e
 | 16/10/2026| Fundamentos de GitHub para registro de atividades feitas |
 | 17/10/2026 | Planejamento para realização do curso da Udemy (mais detalhes em "Cursos e Práticas (Udemy / Complementares)" + fundamentação teórica |
 | 18/10/2026 | Curso Udemy "Seção 1 - Getting Started - Constructing Peripheral Registers from Memory Address" - "1 Downloading our Integrated Development Environment (IDE)" |
+| 20/10/2026 | Estudo da Blue-Pill: Hardware |
 
 ## 📚 Conteúdos e Estudo
 *(Esta seção reúne todo o embasamento teórico, análises e materiais de estudo)*
