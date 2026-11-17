@@ -69,4 +69,4 @@ void loop() {
   }
 }
 
-<img src="./sinal%20mil.png" alt="Interface Arduíno teste Sinal 1 a 1000" width="800" />
+<img src="./sinal mil.png" alt="Interface Arduíno teste Sinal 1 a 1000" width="800" />
