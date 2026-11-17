@@ -31,6 +31,7 @@ Realizar a integração completa entre o hardware de leitura de bioimpedância e
 *(Esta seção reúne todo o embasamento teórico, análises e materiais de estudo)*
 - **Firmware (STM32):** [Estudo da Blue-Pill: Hardware - Conheça os detalhes da Blue-Pill](https://inca-eu-brassel.github.io/bioimpedancia-tg/estudos/Blue-Pill)
 - **Gravação ST-LINK V2 e pisca led:** [Conexão, gravação e teste inicial pisca led](https://inca-eu-brassel.github.io/bioimpedancia-tg/estudos/Teste Led).
+- **Tarefas no Arduíno:** [1. Tarefas no Arduino (Microcontrolador / Interface Serial)](https://inca-eu-brassel.github.io/bioimpedancia-tg/estudos/tarefas_arduino).
 
 
 ### 📖 Leituras e Fundamentação Teórica
