@@ -24,7 +24,8 @@ Realizar a integração completa entre o hardware de leitura de bioimpedância e
 | 18/10/2026 | Curso Udemy "Seção 1 - Getting Started - Constructing Peripheral Registers from Memory Address" - "1 Downloading our Integrated Development Environment (IDE)" |
 | 20/10/2026 | Estudo da Blue-Pill: Hardware |
 | 31/10/2026 | Estudo Gravador ST-LINK V2 |
-| 15/11/2026 | 1. Tarefas no Arduino (Microcontrolador / Interface Serial):<br>A. Mandar número de 1 a 1000 a cada 1ms <br> B. Usar um potenciômetro para mandar sinal AD (Analógico-Digital) e Simular Buffer<br>2. Tarefas no Processing (Processamento e Plotagem) |
+| 15/11/2026 | Organização Tarefas:<br>1. Tarefas no Arduino (Microcontrolador / Interface Serial):<br>A. Mandar número de 1 a 1000 a cada 1ms <br> B. Usar um potenciômetro para mandar sinal AD (Analógico-Digital) e Simular Buffer<br>2. Tarefas no Processing (Processamento e Plotagem) |
+| 17/11/2026 | Execução 1.A. Mandar número de 1 a 1000 a cada 1ms|
 
 ## 📚 Conteúdos e Estudo
 *(Esta seção reúne todo o embasamento teórico, análises e materiais de estudo)*
