@@ -69,5 +69,4 @@ void loop() {
   }
 }
 
-
 <img src="../sinal mil.png" alt="Sinal Mil" width="800" />
