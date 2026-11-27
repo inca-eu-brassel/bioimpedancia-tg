@@ -70,3 +70,64 @@ void loop() {
 }
 
 <img src="../sinal mil.png" alt="Sinal Mil" width="800" />
+
+# Execução 1.B. Usar um potenciômetro para mandar sinal AD (Analógico-Digital) e Simular Buffer
+
+## 1. Visão Geral da Tarefa
+- **Plataforma Utilizada:** Arduino Nano V3 (comunicação USB/UART na porta `COM3`)
+- **Componente de Entrada:** Potenciômetro ligado à entrada analógica `A0`
+- **Objetivo:** Realizar a leitura analógica contínua (`analogRead`) de um sinal variável de `0 V` a `5 V` gerado pelo potenciômetro, convertê-lo para a escala digital de 10 bits (`0` a `1023`) e transmiti-lo pela porta serial a `115200 bps` para acompanhamento no Serial Monitor e no Serial Plotter.
+- **Taxa de Transmissão (Baud Rate):** `115200 bps`
+
+## 2. Ligações e Passo a Passo do Desenvolvimento
+- **Conexão do Potenciômetro na Protoboard:**
+  - **Cabo Preto (`GND`):** conectado ao pino `GND` do Arduino Nano V3 (referência `0 V`).
+  - **Cabo Amarelo (`OP` — terminal central/cursor):** conectado ao pino analógico `A0` (sinal variável de `0 V` a `5 V`).
+  - **Cabo Vermelho (`IP` — alimentação):** conectado ao pino `5V` do Arduino Nano V3 (`+5 V`).
+- **Configuração e Upload:** Carregamento do sketch na IDE do Arduino com taxa serial de `115200 bps`, utilizando o Serial Monitor para inspeção numérica e o Serial Plotter para visualização gráfica contínua da variação do eixo (*knob*).
+
+## 3. O Que Foi Aprendido / Consultas Técnicas
+- **Por que a leitura vai de `0` a `1023`:** O conversor analógico-digital (ADC) do Arduino Nano V3 possui resolução de **10 bits** ($2^{10} = 1024$ níveis, de `0` a `1023`) para a faixa de referência de `0 V` a `5 V`. Cada incremento de `1` unidade equivale a aproximadamente `4,88 mV` (`0,00488 V`).
+- **Comportamento do `delay` vs. Serial Plotter:** Alterar o `delay(...)` no código controla o intervalo entre leituras/envios no loop, exigindo a confirmação de que o novo upload foi concluído na placa. O **Serial Plotter** mostrou-se especialmente útil para enxergar visualmente a transição contínua de `0` a `1023` ao girar o potenciômetro.
+- **Oscilação em valores intermediários:** Ao tentar manter o potenciômetro parado em posições intermediárias, pequenas oscilações na leitura ocorrem devido a ruído elétrico na alimentação USB/referência, pequenas variações de contato mecânico no cursor/protoboard e à alta sensibilidade do passo de ~`4,88 mV` do ADC de 10 bits. Como melhorias práticas discutidas: filtro cerâmico de `100 nF` entre `A0` e `GND` e média de leituras no código.
+- **Conceito de Buffer:** Um *buffer* é uma região temporária de memória que atua como fila/memória intermediária entre processos ou dispositivos com ritmos diferentes (como buffers de transmissão/recepção `TX`/`RX` na comunicação serial ou janelas/arrays de amostras para suavização de sinais), evitando perda de dados e absorvendo variações de tempo, respeitando limites de capacidade e latência.
+- **Limpeza do Serial Monitor:** A saída do Serial Monitor pode ser limpa rapidamente pelo atalho `Ctrl + L` (ou `Cmd + L`) ou pelo botão de limpar saída da IDE, apagando apenas o texto exibido sem interromper a execução do Arduino.
+
+## 4. Dificuldades Encontradas e Soluções
+- **Porta Serial Ocupada (`Port monitor error: command 'open' failed: Serial port busy. Could not connect to COM3 serial port.`):**
+  - *Dificuldade:* Tentativa de abrir o Serial Monitor enquanto a porta `COM3` já estava em uso por outro processo/janela ou logo após operação serial.
+  - *Solução:* Fechar outros programas/janelas que acessam a `COM3` (como Serial Plotter, Processing ou outra instância/aba), aguardar ou reconectar o cabo USB quando necessário e confirmar a porta ativa no sistema.
+- **Oscilação de leitura em posições intermediárias:**
+  - *Dificuldade:* Pequena trepidação dos valores quando o eixo do potenciômetro é posicionado em pontos do meio da escala.
+  - *Solução:* Compreensão da origem física/elétrica do fenômeno (ruído, contato e resolução de 10 bits) e identificação de estratégias de mitigação via hardware (capacitor de `100 nF` entre `A0` e `GND`) e software (média de leituras).
+
+---
+
+## 5. Código Comentado (`teste_1b_potenciometro.ino`)
+
+```cpp
+/**
+ * @file   : teste_1b_potenciometro.ino
+ * @author : Projeto TG2 - Bioimpedância e Integração
+ * @brief  : Leitura analógica de potenciômetro em A0 (0 a 1023) enviada via UART a 115200 bps
+ */
+
+const int potPin = A0; // Pino analógico conectado ao cursor (fio amarelo / OP) do potenciômetro
+
+void setup() {
+  // Inicializa a comunicação serial a 115200 bps para compatibilidade com Serial Monitor/Plotter
+  Serial.begin(115200);
+}
+
+void loop() {
+  // Lê a tensão em A0 (0 V -> 0; 5 V -> 1023 no ADC de 10 bits)
+  int valorAD = analogRead(potPin);
+
+  // Envia o valor convertido seguido de quebra de linha (\n)
+  Serial.println(valorAD);
+
+  // Intervalo entre leituras (ajuste este valor conforme a taxa de amostragem desejada)
+  delay(10);
+}
+
+<img src="../Potenciômetro BK10.jpg" alt="Sinal Mil" width="800" />
