@@ -87,7 +87,7 @@ void loop() {
 - **Configuração e Upload:** Carregamento do sketch na IDE do Arduino com taxa serial de `115200 bps`, utilizando o Serial Monitor para inspeção numérica e o Serial Plotter para visualização gráfica contínua da variação do eixo (*knob*).
 
 ## 3. O Que Foi Aprendido / Consultas Técnicas
-- **Por que a leitura vai de `0` a `1023`:** O conversor analógico-digital (ADC) do Arduino Nano V3 possui resolução de **10 bits** ($2^{10} = 1024$ níveis, de `0` a `1023`) para a faixa de referência de `0 V` a `5 V`. Cada incremento de `1` unidade equivale a aproximadamente `4,88 mV` (`0,00488 V`).
+- **Por que a leitura vai de `0` a `1023`:** O conversor analógico-digital (ADC) do Arduino Nano V3 possui resolução de **10 bits** (2^{10} = 1024 níveis, de `0` a `1023`) para a faixa de referência de `0 V` a `5 V`. Cada incremento de `1` unidade equivale a aproximadamente `4,88 mV` (`0,00488 V`).
 - **Comportamento do `delay` vs. Serial Plotter:** Alterar o `delay(...)` no código controla o intervalo entre leituras/envios no loop, exigindo a confirmação de que o novo upload foi concluído na placa. O **Serial Plotter** mostrou-se especialmente útil para enxergar visualmente a transição contínua de `0` a `1023` ao girar o potenciômetro.
 - **Oscilação em valores intermediários:** Ao tentar manter o potenciômetro parado em posições intermediárias, pequenas oscilações na leitura ocorrem devido a ruído elétrico na alimentação USB/referência, pequenas variações de contato mecânico no cursor/protoboard e à alta sensibilidade do passo de ~`4,88 mV` do ADC de 10 bits. Como melhorias práticas discutidas: filtro cerâmico de `100 nF` entre `A0` e `GND` e média de leituras no código.
 - **Conceito de Buffer:** Um *buffer* é uma região temporária de memória que atua como fila/memória intermediária entre processos ou dispositivos com ritmos diferentes (como buffers de transmissão/recepção `TX`/`RX` na comunicação serial ou janelas/arrays de amostras para suavização de sinais), evitando perda de dados e absorvendo variações de tempo, respeitando limites de capacidade e latência.
@@ -130,4 +130,5 @@ void loop() {
   delay(10);
 }
 
-<img src="../Potenciômetro BK10.jpg" alt="Sinal Mil" width="800" />
+<img src="../Potenciômetro BK10.jpg" alt="Sinal Mil" width="400" />
+<img src="../Tarefa 1B.png" width="800" />
