@@ -68,6 +68,7 @@ void loop() {
     delay(1);          // Aguarda exatamente 1 milissegundo por iteração
   }
 }
+```
 
 <img src="../sinal mil.png" alt="Sinal Mil" width="800" />
 
@@ -129,6 +130,7 @@ void loop() {
   // Intervalo entre leituras (ajuste este valor conforme a taxa de amostragem desejada)
   delay(10);
 }
+```
 
 <img src="../Potenciômetro BK10.jpg" alt="Sinal Mil" width="400" />
 <img src="../Tarefa 1B.png" width="800" />
