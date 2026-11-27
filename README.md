@@ -27,7 +27,7 @@ Realizar a integração completa entre o hardware de leitura de bioimpedância e
 | 15/11/2026 | Organização Tarefas:<br>1. Tarefas no Arduino (Microcontrolador / Interface Serial):<br>A. Mandar número de 1 a 1000 a cada 1ms <br> B. Usar um potenciômetro para mandar sinal AD (Analógico-Digital) e Simular Buffer<br>2. Tarefas no Processing (Processamento e Plotagem) |
 | 17/11/2026 | Execução 1.A. Mandar número de 1 a 1000 a cada 1ms|
 | 25/11/2026 | Execução 1.B. Sem potenciômetro|
-| 27/11/2026 | Execução Usar um potenciômetro para mandar sinal AD (Analógico-Digital) e Simular Buffer|
+| 27/11/2026 | Execução 1.B. Usar um potenciômetro para mandar sinal AD (Analógico-Digital) e Simular Buffer|
 
 
 ## 📚 Conteúdos e Estudo
