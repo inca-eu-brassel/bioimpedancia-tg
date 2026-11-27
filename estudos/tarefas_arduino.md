@@ -25,7 +25,7 @@ Este glossário reúne os principais termos, conceitos e ferramentas abordados d
 * **UART via HAL (Hardware Abstraction Layer)**  
   Abordagem baseada na camada de abstração de hardware oficial da STMicroelectronics. Ela fornece funções padronizadas e de alto nível (como `HAL_UART_Transmit`) que simplificam o uso do periférico UART, tornando o código mais portátil e legível sem exigir o gerenciamento manual direto dos registradores internos.
 
-# Relatório da Tarefa 1: Arduino - Envio Sequencial de 1 a 1000
+# Relatório da Tarefa 1.A: Arduino - Envio Sequencial de 1 a 1000
 
 ## 1. Visão Geral da Tarefa
 * **Plataforma Utilizada:** Arduino Nano V3
@@ -71,7 +71,7 @@ void loop() {
 
 <img src="../sinal mil.png" alt="Sinal Mil" width="800" />
 
-# Execução 1.B. Usar um potenciômetro para mandar sinal AD (Analógico-Digital) e Simular Buffer
+# Relatório da Tarefa 1.B. Usar um potenciômetro para mandar sinal AD (Analógico-Digital) e Simular Buffer
 
 ## 1. Visão Geral da Tarefa
 - **Plataforma Utilizada:** Arduino Nano V3 (comunicação USB/UART na porta `COM3`)
